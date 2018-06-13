@@ -1,6 +1,22 @@
-.windows-panel
+$primary-color: #202225
+$darken-color: darken($primary-color, 5%)
+$lighten-color: lighten($primary-color, 5%)
+
+.app
+  display: flex
+  flex-direction: column
+  width: 100vw
+  height: 100vh
+  background-color: $lighten-color
+
+.app-page
+  display: flex
+  flex-direction: row
+  flex: 1 1 auto
+
+.app-panel
   height: 22px
-  background-color: #202225
+  background-color: $primary-color
   display: flex
   flex-direction: row-reverse
 
@@ -13,25 +29,27 @@
     padding-left: 1rem
 
   .windowcontrol
-    width: 2.5rem
-    display: flex
+    width: 2rem
     position: relative
     justify-content: center
     align-items: center
 
     &:hover
       cursor: pointer
-      background-color: rgba(255, 255, 255, 0.05)
+      background-color: $lighten-color
 
-.aside
-  grid-area: sidebar
-  float: left
+.sidebar
+  display: flex
+  flex-direction: column
+  width: 300px
   padding: 1rem
-  background-color: #eee
-  border-right: 1px solid #ccc
+  background-color: $darken-color
+  border-right: 1px solid $darken-color
 
-.full-width-container
+.content
   width: 100%
-  max-width: 100%
-  clear: both
-  margin: 0 auto
+  padding: 1rem
+  display: flex
+  flex-direction: column
+  flex: 1
+
