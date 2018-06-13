@@ -1,0 +1,37 @@
+.windows-panel
+  height: 22px
+  background-color: #202225
+  display: flex
+  flex-direction: row-reverse
+
+  .logo
+    left: 0
+    position: absolute
+    color: white
+    text-decoration: none
+    font-weight: 800
+    padding-left: 1rem
+
+  .windowcontrol
+    width: 2.5rem
+    display: flex
+    position: relative
+    justify-content: center
+    align-items: center
+
+    &:hover
+      cursor: pointer
+      background-color: rgba(255, 255, 255, 0.05)
+
+.aside
+  grid-area: sidebar
+  float: left
+  padding: 1rem
+  background-color: #eee
+  border-right: 1px solid #ccc
+
+.full-width-container
+  width: 100%
+  max-width: 100%
+  clear: both
+  margin: 0 auto
