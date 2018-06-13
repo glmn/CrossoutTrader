@@ -1,4 +1,5 @@
 $primary-color: #202225
+$logo-color: #abacae
 $darken-color: darken($primary-color, 5%)
 $lighten-color: lighten($primary-color, 5%)
 
@@ -23,14 +24,15 @@ $lighten-color: lighten($primary-color, 5%)
   .logo
     left: 0
     position: absolute
-    color: white
+    color: $logo-color
     text-decoration: none
-    font-weight: 800
+    font-weight: 600
     padding-left: 1rem
 
   .windowcontrol
-    width: 2rem
-    position: relative
+    display: flex
+    opacity: .6
+    width: 28px
     justify-content: center
     align-items: center
 

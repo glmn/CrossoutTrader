@@ -18,13 +18,14 @@
   .app-panel .logo {
     left: 0;
     position: absolute;
-    color: white;
+    color: #abacae;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 600;
     padding-left: 1rem; }
   .app-panel .windowcontrol {
-    width: 2rem;
-    position: relative;
+    display: flex;
+    opacity: 0.6;
+    width: 28px;
     justify-content: center;
     align-items: center; }
     .app-panel .windowcontrol:hover {
