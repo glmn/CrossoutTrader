@@ -1,0 +1,32 @@
+{
+  "name": "crossoutnotifier",
+  "version": "0.0.1",
+  "description": "Get latest data from crossout market to stay in touch",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glmn/CrossoutNotifier.git"
+  },
+  "keywords": [
+    "crossout",
+    "electron",
+    "market",
+    "crossout",
+    "api",
+    "crossout",
+    "market",
+    "crossoutdb"
+  ],
+  "author": "Stanislav \"glmn\" Gelman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glmn/CrossoutNotifier/issues"
+  },
+  "homepage": "https://github.com/glmn/CrossoutNotifier#readme",
+  "dependencies": {
+    "electron": "^2.0.2"
+  }
+}
