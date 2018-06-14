@@ -11,6 +11,7 @@
   flex: 1 1 auto; }
 
 .app-panel {
+  -webkit-app-region: drag;
   height: 22px;
   background-color: #202225;
   display: flex;
@@ -24,6 +25,7 @@
     padding-left: 1rem; }
   .app-panel .windowcontrol {
     display: flex;
+    -webkit-app-region: no-drag;
     opacity: 0.6;
     width: 28px;
     justify-content: center;
