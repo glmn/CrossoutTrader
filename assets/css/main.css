@@ -37,7 +37,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   padding: 1rem;
   background-color: #141517;
   border-right: 1px solid #141517; }
@@ -45,8 +45,11 @@
     font-size: 30px;
     color: #abacae; }
   .sidebar .items .item {
+    border-radius: 3px;
+    box-sizing: border-box;
     border: 1px solid #2c2f33;
     padding: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row; }
     .sidebar .items .item:hover {
@@ -54,19 +57,38 @@
       border: 1px solid #72767d; }
     .sidebar .items .item .img {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 3px; }
+      .sidebar .items .item .img.common {
+        border-color: #696969; }
+      .sidebar .items .item .img.rare {
+        border-color: #0040fd; }
+      .sidebar .items .item .img.epic {
+        border-color: #6a0082; }
+      .sidebar .items .item .img.legendary {
+        border-color: #daa520; }
+      .sidebar .items .item .img.relic {
+        border-color: #d2691e; }
     .sidebar .items .item .data {
       color: #72767d;
       padding-left: 1rem;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .sidebar .items .item .data .name {
         flex-direction: row;
         font-weight: bold; }
-      .sidebar .items .item .data .sell {
-        flex-direction: row; }
-      .sidebar .items .item .data .buy {
-        flex-direction: row; }
+      .sidebar .items .item .data .price {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        line-height: 16px; }
+        .sidebar .items .item .data .price .sell {
+          flex-direction: column;
+          padding-right: 1rem; }
+        .sidebar .items .item .data .price .buy {
+          flex-direction: column; }
 
 .content {
   width: 100%;
@@ -74,5 +96,25 @@
   display: flex;
   flex-direction: column;
   flex: 1; }
+
+div.coin {
+  display: inline-block;
+  background: url("../img/coin.png") 50% no-repeat;
+  width: 16px;
+  height: 16px; }
+div.angle-up {
+  background-color: green;
+  -webkit-mask: url("../img/angle-up.svg") 50% no-repeat;
+  mask: url("../img/angle-up.svg") 50% no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+div.angle-down {
+  background-color: red;
+  -webkit-mask: url("../img/angle-down.svg") 50% no-repeat;
+  mask: url("../img/angle-down.svg") 50% no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
 
 /*# sourceMappingURL=main.css.map */
