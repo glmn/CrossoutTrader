@@ -41,6 +41,32 @@
   padding: 1rem;
   background-color: #141517;
   border-right: 1px solid #141517; }
+  .sidebar .title {
+    font-size: 30px;
+    color: #abacae; }
+  .sidebar .items .item {
+    border: 1px solid #2c2f33;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row; }
+    .sidebar .items .item:hover {
+      cursor: pointer;
+      border: 1px solid #72767d; }
+    .sidebar .items .item .img {
+      display: flex;
+      flex-direction: column; }
+    .sidebar .items .item .data {
+      color: #72767d;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column; }
+      .sidebar .items .item .data .name {
+        flex-direction: row;
+        font-weight: bold; }
+      .sidebar .items .item .data .sell {
+        flex-direction: row; }
+      .sidebar .items .item .data .buy {
+        flex-direction: row; }
 
 .content {
   width: 100%;
