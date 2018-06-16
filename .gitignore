@@ -1,3 +1,5 @@
+items.json
 node_modules
+old.items.json
 package-lock.json
-/assets/css/crossoutnotifier.css.map
+*.map

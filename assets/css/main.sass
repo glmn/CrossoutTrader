@@ -5,12 +5,18 @@ $darken-color: darken($primary-color, 5%)
 $lighten-color: lighten($primary-color, 5%)
 
 $common-color: #696969
+$common-background-color: rgba(170, 170, 170, 0.1)
 $rare-color: #0040fd
+$rare-background-color: rgba(0, 102, 204, 0.1)
 $epic-color: #6a0082
+$epic-background-color: rgba(185, 0, 255, 0.1)
 $legendary-color: #daa520
+$legendary-background-color: rgba(254, 160, 64, 0.1)
 $relic-color: #d2691e
+$relic-background-color: rgba(255, 103, 1, 0.1)
 
 .app
+  font-family: "Poppins", sans-serif
   display: flex
   flex-direction: column
   width: 100vw
@@ -52,7 +58,7 @@ $relic-color: #d2691e
 .sidebar
   display: flex
   flex-direction: column
-  width: 400px
+  width: 550px
   padding: 1rem
   background-color: $darken-color
   border-right: 1px solid $darken-color
@@ -71,30 +77,71 @@ $relic-color: #d2691e
       display: flex
       flex-direction: row
 
+      &.common
+        border: 1px solid $common-color
+
+      &.rare
+        border: 1px solid $rare-color
+
+      &.epic
+        border: 1px solid $epic-color
+
+      &.legendary
+        border: 1px solid $legendary-color
+
+      &.relic
+        border: 1px solid $relic-color
+
       &:hover
         cursor: pointer
         border: 1px solid $primary-text-color
 
+      .removeButton
+        position: absolute
+        margin-top: -10px
+        margin-left: 520px
+        color: white
+
       .img
+        width: 72px
+        height: 72px
         display: flex
         flex-direction: column
         border: 1px solid black
         border-radius: 3px
+        margin: 0 auto
+
+        img
+          width: 72px
+          height: 72px
+          text-align: center
+          margin-left: auto
+          margin-right: auto
 
         &.common
+          border-top: 3px solid $common-color
           border-color: $common-color
+          background-color: $common-background-color
 
         &.rare
+          border-top: 3px solid $rare-color
           border-color: $rare-color
+          background-color: $rare-background-color
 
         &.epic
+          border-top: 3px solid $epic-color
           border-color: $epic-color
+          background-color: $epic-background-color
 
         &.legendary
+          border-top: 3px solid $legendary-color
           border-color: $legendary-color
+          background-color: $legendary-background-color
 
         &.relic
+          border-top: 3px solid $relic-color
           border-color: $relic-color
+          background-color: $relic-background-color
 
       .data
         color: $primary-text-color
@@ -105,19 +152,25 @@ $relic-color: #d2691e
 
         .name
           flex-direction: row
-          font-weight: bold
+          font-weight: 800
+          font-size: 18px
 
         .price
           display: flex
           flex-direction: row
           font-size: 16px
+          font-weight: 400
           line-height: 16px
+          justify-content: space-between
 
           .sell
             flex-direction: column
             padding-right: 1rem
 
           .buy
+            flex-direction: column
+
+          .margin
             flex-direction: column
 
 .content
@@ -129,11 +182,27 @@ $relic-color: #d2691e
 
 // utils
 div
-  &.coin
-    display: inline-block
-    background: url("../img/coin.png") 50% no-repeat
-    width: 16px
-    height: 16px
+  &.name
+    &.common
+      color: $common-color
+
+    &.rare
+      color: $rare-color
+
+    &.epic
+      color: $epic-color
+
+    &.legendary
+      color: $legendary-color
+
+    &.relic
+      color: $relic-color
+
+    &.coin
+      display: inline-block
+      background: url("../img/coin.png") 50% no-repeat
+      width: 16px
+      height: 16px
 
   &.angle-up
     background-color: green
@@ -147,6 +216,14 @@ div
     background-color: red
     -webkit-mask: url("../img/angle-down.svg") 50% no-repeat
     mask: url("../img/angle-down.svg") 50% no-repeat
+    display: inline-block
+    width: 16px
+    height: 16px
+
+  &.diff
+    background-color: yellow
+    -webkit-mask: url("../img/margin.svg") 50% no-repeat
+    mask: url("../img/margin.svg") 50% no-repeat
     display: inline-block
     width: 16px
     height: 16px

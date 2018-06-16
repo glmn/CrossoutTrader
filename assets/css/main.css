@@ -1,4 +1,5 @@
 .app {
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -37,7 +38,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 550px;
   padding: 1rem;
   background-color: #141517;
   border-right: 1px solid #141517; }
@@ -52,24 +53,58 @@
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row; }
+    .sidebar .items .item.common {
+      border: 1px solid #696969; }
+    .sidebar .items .item.rare {
+      border: 1px solid #0040fd; }
+    .sidebar .items .item.epic {
+      border: 1px solid #6a0082; }
+    .sidebar .items .item.legendary {
+      border: 1px solid #daa520; }
+    .sidebar .items .item.relic {
+      border: 1px solid #d2691e; }
     .sidebar .items .item:hover {
       cursor: pointer;
       border: 1px solid #72767d; }
+    .sidebar .items .item .removeButton {
+      position: absolute;
+      margin-top: -10px;
+      margin-left: 520px;
+      color: white; }
     .sidebar .items .item .img {
+      width: 72px;
+      height: 72px;
       display: flex;
       flex-direction: column;
       border: 1px solid black;
-      border-radius: 3px; }
+      border-radius: 3px;
+      margin: 0 auto; }
+      .sidebar .items .item .img img {
+        width: 72px;
+        height: 72px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; }
       .sidebar .items .item .img.common {
-        border-color: #696969; }
+        border-top: 3px solid #696969;
+        border-color: #696969;
+        background-color: rgba(170, 170, 170, 0.1); }
       .sidebar .items .item .img.rare {
-        border-color: #0040fd; }
+        border-top: 3px solid #0040fd;
+        border-color: #0040fd;
+        background-color: rgba(0, 102, 204, 0.1); }
       .sidebar .items .item .img.epic {
-        border-color: #6a0082; }
+        border-top: 3px solid #6a0082;
+        border-color: #6a0082;
+        background-color: rgba(185, 0, 255, 0.1); }
       .sidebar .items .item .img.legendary {
-        border-color: #daa520; }
+        border-top: 3px solid #daa520;
+        border-color: #daa520;
+        background-color: rgba(254, 160, 64, 0.1); }
       .sidebar .items .item .img.relic {
-        border-color: #d2691e; }
+        border-top: 3px solid #d2691e;
+        border-color: #d2691e;
+        background-color: rgba(255, 103, 1, 0.1); }
     .sidebar .items .item .data {
       color: #72767d;
       padding-left: 1rem;
@@ -78,16 +113,21 @@
       flex-direction: column; }
       .sidebar .items .item .data .name {
         flex-direction: row;
-        font-weight: bold; }
+        font-weight: 800;
+        font-size: 18px; }
       .sidebar .items .item .data .price {
         display: flex;
         flex-direction: row;
         font-size: 16px;
-        line-height: 16px; }
+        font-weight: 400;
+        line-height: 16px;
+        justify-content: space-between; }
         .sidebar .items .item .data .price .sell {
           flex-direction: column;
           padding-right: 1rem; }
         .sidebar .items .item .data .price .buy {
+          flex-direction: column; }
+        .sidebar .items .item .data .price .margin {
           flex-direction: column; }
 
 .content {
@@ -97,7 +137,17 @@
   flex-direction: column;
   flex: 1; }
 
-div.coin {
+div.name.common {
+  color: #696969; }
+div.name.rare {
+  color: #0040fd; }
+div.name.epic {
+  color: #6a0082; }
+div.name.legendary {
+  color: #daa520; }
+div.name.relic {
+  color: #d2691e; }
+div.name.coin {
   display: inline-block;
   background: url("../img/coin.png") 50% no-repeat;
   width: 16px;
@@ -113,6 +163,13 @@ div.angle-down {
   background-color: red;
   -webkit-mask: url("../img/angle-down.svg") 50% no-repeat;
   mask: url("../img/angle-down.svg") 50% no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+div.diff {
+  background-color: yellow;
+  -webkit-mask: url("../img/margin.svg") 50% no-repeat;
+  mask: url("../img/margin.svg") 50% no-repeat;
   display: inline-block;
   width: 16px;
   height: 16px; }
