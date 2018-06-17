@@ -6,11 +6,11 @@ $lighten-color: lighten($primary-color, 5%)
 
 $common-color: #696969
 $common-background-color: rgba(170, 170, 170, 0.1)
-$rare-color: #0040fd
+$rare-color: #7288da
 $rare-background-color: rgba(0, 102, 204, 0.1)
 $epic-color: #6a0082
 $epic-background-color: rgba(185, 0, 255, 0.1)
-$legendary-color: #daa520
+$legendary-color: #faa61a
 $legendary-background-color: rgba(254, 160, 64, 0.1)
 $relic-color: #d2691e
 $relic-background-color: rgba(255, 103, 1, 0.1)
@@ -59,67 +59,51 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
   display: flex
   flex-direction: column
   width: 550px
-  padding: 1rem
   background-color: $darken-color
-  border-right: 1px solid $darken-color
+  padding: 1rem
 
   .title
     font-size: 30px
     color: $light-color
 
-  .items
-    .item
-      border-radius: 3px
-      box-sizing: border-box
-      border: 1px solid $lighten-color
-      padding: 1rem
-      margin-bottom: 1rem
-      display: flex
-      flex-direction: row
+  table
+    font-family: "Poppins", sans-serif
+    padding: 0
 
-      &.common
-        border: 1px solid $common-color
+    th
+      color: $primary-text-color
+      font-weight: 300
 
-      &.rare
-        border: 1px solid $rare-color
+    th, td
+      border-bottom: none
+      padding: 0
 
-      &.epic
-        border: 1px solid $epic-color
+    tbody
+      tr
+        &:nth-child(odd)
+          background: $lighten-color
 
-      &.legendary
-        border: 1px solid $legendary-color
+    td
+      color: white
+      font-weight: 600
 
-      &.relic
-        border: 1px solid $relic-color
+      sup
+        font-weight: 300
 
-      &:hover
-        cursor: pointer
-        border: 1px solid $primary-text-color
+      &.img
+        text-align: center
+        padding: 6px
 
-      .removeButton
-        position: absolute
-        margin-top: -10px
-        margin-left: 520px
-        color: white
-
-      .img
-        width: 72px
-        height: 72px
-        display: flex
-        flex-direction: column
+      img
+        vertical-align: middle
+        width: 48px
+        height: 48px
         border: 1px solid black
-        border-radius: 3px
-        margin: 0 auto
-
-        img
-          width: 72px
-          height: 72px
-          text-align: center
-          margin-left: auto
-          margin-right: auto
-          box-sizing: border-box
-          -moz-box-sizing: border-box
-          -webkit-box-sizing: border-box
+        margin-left: auto
+        margin-right: auto
+        box-sizing: border-box
+        -moz-box-sizing: border-box
+        -webkit-box-sizing: border-box
 
         &.common
           border-top: 4px solid $common-color
@@ -145,39 +129,6 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
           border-top: 4px solid $relic-color
           border-color: $relic-color
           background-color: $relic-background-color
-
-      .data
-        color: $primary-text-color
-        padding-left: 1rem
-        width: 100%
-        display: flex
-        flex-direction: column
-
-        .name
-          flex-direction: row
-          font-weight: 800
-          font-size: 18px
-
-        .price
-          display: flex
-          flex-direction: row
-          font-size: 16px
-          font-weight: 400
-          line-height: 16px
-          justify-content: space-between
-
-          .sell
-            flex-direction: column
-            padding-right: 1rem
-
-          .buy
-            flex-direction: column
-
-          .sell, .buy
-            color: #83f565
-
-          .margin
-            flex-direction: column
 
 .content
   width: 100%
@@ -211,7 +162,7 @@ div
       height: 16px
 
   &.angle-up
-    background-color: green
+    background-color: #43b581
     -webkit-mask: url("../img/angle-up.svg") 50% no-repeat
     mask: url("../img/angle-up.svg") 50% no-repeat
     display: inline-block
@@ -219,7 +170,7 @@ div
     height: 16px
 
   &.angle-down
-    background-color: red
+    background-color: #f04747
     -webkit-mask: url("../img/angle-down.svg") 50% no-repeat
     mask: url("../img/angle-down.svg") 50% no-repeat
     display: inline-block
