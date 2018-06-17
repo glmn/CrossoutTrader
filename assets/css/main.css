@@ -38,7 +38,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 500px;
   background-color: #141517;
   padding: 1rem; }
   .sidebar .title {
