@@ -83,9 +83,36 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
         &:nth-child(odd)
           background: $lighten-color
 
+          td:nth-child(2):after
+            content: ""
+            text-align: right
+            position: absolute
+            margin-top: -42px
+            margin-left: 92px
+            width: 40px
+            height: 60px
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), $lighten-color 50%)
+
     td
       color: white
       font-weight: 600
+
+      &:nth-child(2)
+        max-width: 100px
+        padding-right: 10px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+
+        &:after
+          content: ""
+          text-align: right
+          position: absolute
+          margin-top: -42px
+          margin-left: 92px
+          width: 40px
+          height: 60px
+          background: linear-gradient(to right, rgba(255, 255, 255, 0), $darken-color 50%)
 
       sup
         font-weight: 300

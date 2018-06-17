@@ -55,9 +55,33 @@
       padding: 0; }
     .sidebar table tbody tr:nth-child(odd) {
       background: #2c2f33; }
+      .sidebar table tbody tr:nth-child(odd) td:nth-child(2):after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        margin-top: -42px;
+        margin-left: 92px;
+        width: 40px;
+        height: 60px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #2c2f33 50%); }
     .sidebar table td {
       color: white;
       font-weight: 600; }
+      .sidebar table td:nth-child(2) {
+        max-width: 100px;
+        padding-right: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+        .sidebar table td:nth-child(2):after {
+          content: "";
+          text-align: right;
+          position: absolute;
+          margin-top: -42px;
+          margin-left: 92px;
+          width: 40px;
+          height: 60px;
+          background: linear-gradient(to right, rgba(255, 255, 255, 0), #141517 50%); }
       .sidebar table td sup {
         font-weight: 300; }
       .sidebar table td.img {
