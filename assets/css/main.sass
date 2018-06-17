@@ -16,6 +16,7 @@ $relic-color: #d2691e
 $relic-background-color: rgba(255, 103, 1, 0.1)
 
 .app
+  font-size: 12px
   font-family: "Poppins", sans-serif
   display: flex
   flex-direction: column
@@ -58,12 +59,13 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
 .sidebar
   display: flex
   flex-direction: column
-  width: 500px
+  width: 400px
   background-color: $darken-color
   padding: 1rem
 
   .title
-    font-size: 30px
+    text-align: center
+    font-size: 16px
     color: $light-color
 
   table
@@ -87,10 +89,10 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
             content: ""
             text-align: right
             position: absolute
-            margin-top: -42px
-            margin-left: 92px
-            width: 40px
-            height: 60px
+            margin-top: -39px
+            margin-left: 68px
+            width: 20px
+            height: 59px
             background: linear-gradient(to right, rgba(255, 255, 255, 0), $lighten-color 50%)
 
     td
@@ -98,7 +100,7 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
       font-weight: 600
 
       &:nth-child(2)
-        max-width: 100px
+        max-width: 64px
         padding-right: 10px
         overflow: hidden
         text-overflow: ellipsis
@@ -108,10 +110,10 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
           content: ""
           text-align: right
           position: absolute
-          margin-top: -42px
-          margin-left: 92px
-          width: 40px
-          height: 60px
+          margin-top: -39px
+          margin-left: 68px
+          width: 20px
+          height: 59px
           background: linear-gradient(to right, rgba(255, 255, 255, 0), $darken-color 50%)
 
       sup
@@ -128,9 +130,6 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
         border: 1px solid black
         margin-left: auto
         margin-right: auto
-        box-sizing: border-box
-        -moz-box-sizing: border-box
-        -webkit-box-sizing: border-box
 
         &.common
           border-top: 4px solid $common-color
@@ -183,12 +182,14 @@ div
       color: $relic-color
 
     &.coin
+      vertical-align: sub
       display: inline-block
       background: url("../img/coin.png") 50% no-repeat
       width: 16px
       height: 16px
 
   &.angle-up
+    vertical-align: sub
     background-color: #43b581
     -webkit-mask: url("../img/angle-up.svg") 50% no-repeat
     mask: url("../img/angle-up.svg") 50% no-repeat
@@ -197,6 +198,7 @@ div
     height: 16px
 
   &.angle-down
+    vertical-align: sub
     background-color: #f04747
     -webkit-mask: url("../img/angle-down.svg") 50% no-repeat
     mask: url("../img/angle-down.svg") 50% no-repeat
