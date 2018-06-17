@@ -1,4 +1,5 @@
 .app {
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
@@ -38,11 +39,12 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 400px;
   background-color: #141517;
   padding: 1rem; }
   .sidebar .title {
-    font-size: 30px;
+    text-align: center;
+    font-size: 16px;
     color: #abacae; }
   .sidebar table {
     font-family: "Poppins", sans-serif;
@@ -55,9 +57,33 @@
       padding: 0; }
     .sidebar table tbody tr:nth-child(odd) {
       background: #2c2f33; }
+      .sidebar table tbody tr:nth-child(odd) td:nth-child(2):after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        margin-top: -39px;
+        margin-left: 68px;
+        width: 20px;
+        height: 59px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #2c2f33 50%); }
     .sidebar table td {
       color: white;
       font-weight: 600; }
+      .sidebar table td:nth-child(2) {
+        max-width: 64px;
+        padding-right: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+        .sidebar table td:nth-child(2):after {
+          content: "";
+          text-align: right;
+          position: absolute;
+          margin-top: -39px;
+          margin-left: 68px;
+          width: 20px;
+          height: 59px;
+          background: linear-gradient(to right, rgba(255, 255, 255, 0), #141517 50%); }
       .sidebar table td sup {
         font-weight: 300; }
       .sidebar table td.img {
@@ -69,10 +95,7 @@
         height: 48px;
         border: 1px solid black;
         margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box; }
+        margin-right: auto; }
         .sidebar table td img.common {
           border-top: 4px solid #696969;
           border-color: #696969;
@@ -112,11 +135,13 @@ div.name.legendary {
 div.name.relic {
   color: #d2691e; }
 div.name.coin {
+  vertical-align: sub;
   display: inline-block;
   background: url("../img/coin.png") 50% no-repeat;
   width: 16px;
   height: 16px; }
 div.angle-up {
+  vertical-align: sub;
   background-color: #43b581;
   -webkit-mask: url("../img/angle-up.svg") 50% no-repeat;
   mask: url("../img/angle-up.svg") 50% no-repeat;
@@ -124,6 +149,7 @@ div.angle-up {
   width: 16px;
   height: 16px; }
 div.angle-down {
+  vertical-align: sub;
   background-color: #f04747;
   -webkit-mask: url("../img/angle-down.svg") 50% no-repeat;
   mask: url("../img/angle-down.svg") 50% no-repeat;
