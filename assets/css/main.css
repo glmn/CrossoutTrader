@@ -84,25 +84,28 @@
         height: 72px;
         text-align: center;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box; }
       .sidebar .items .item .img.common {
-        border-top: 3px solid #696969;
+        border-top: 4px solid #696969;
         border-color: #696969;
         background-color: rgba(170, 170, 170, 0.1); }
       .sidebar .items .item .img.rare {
-        border-top: 3px solid #0040fd;
+        border-top: 4px solid #0040fd;
         border-color: #0040fd;
         background-color: rgba(0, 102, 204, 0.1); }
       .sidebar .items .item .img.epic {
-        border-top: 3px solid #6a0082;
+        border-top: 4px solid #6a0082;
         border-color: #6a0082;
         background-color: rgba(185, 0, 255, 0.1); }
       .sidebar .items .item .img.legendary {
-        border-top: 3px solid #daa520;
+        border-top: 4px solid #daa520;
         border-color: #daa520;
         background-color: rgba(254, 160, 64, 0.1); }
       .sidebar .items .item .img.relic {
-        border-top: 3px solid #d2691e;
+        border-top: 4px solid #d2691e;
         border-color: #d2691e;
         background-color: rgba(255, 103, 1, 0.1); }
     .sidebar .items .item .data {
@@ -127,6 +130,8 @@
           padding-right: 1rem; }
         .sidebar .items .item .data .price .buy {
           flex-direction: column; }
+        .sidebar .items .item .data .price .sell, .sidebar .items .item .data .price .buy {
+          color: #83f565; }
         .sidebar .items .item .data .price .margin {
           flex-direction: column; }
 

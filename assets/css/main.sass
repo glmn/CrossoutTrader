@@ -117,29 +117,32 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
           text-align: center
           margin-left: auto
           margin-right: auto
+          box-sizing: border-box
+          -moz-box-sizing: border-box
+          -webkit-box-sizing: border-box
 
         &.common
-          border-top: 3px solid $common-color
+          border-top: 4px solid $common-color
           border-color: $common-color
           background-color: $common-background-color
 
         &.rare
-          border-top: 3px solid $rare-color
+          border-top: 4px solid $rare-color
           border-color: $rare-color
           background-color: $rare-background-color
 
         &.epic
-          border-top: 3px solid $epic-color
+          border-top: 4px solid $epic-color
           border-color: $epic-color
           background-color: $epic-background-color
 
         &.legendary
-          border-top: 3px solid $legendary-color
+          border-top: 4px solid $legendary-color
           border-color: $legendary-color
           background-color: $legendary-background-color
 
         &.relic
-          border-top: 3px solid $relic-color
+          border-top: 4px solid $relic-color
           border-color: $relic-color
           background-color: $relic-background-color
 
@@ -169,6 +172,9 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
 
           .buy
             flex-direction: column
+
+          .sell, .buy
+            color: #83f565
 
           .margin
             flex-direction: column
