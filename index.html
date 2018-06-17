@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    
+
     <script src="assets/js/app.js"></script>
   </head>
   <body>
@@ -26,44 +26,47 @@
 
         <aside class="sidebar">
           <div class="title">Favorites Items</div>
-          <div class="items">
-            <div class="item relic">
-              <div class="removeButton"><svg width="12" height="12" viewBox="0 0 12 12"><polygon fill="#ffffff" fill-rule="evenodd" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon></svg></div>
-                <div class="img relic"><img src="https://vignette.wikia.nocookie.net/crossout/images/d/dc/%D0%9E%D1%80%D0%B5%D0%BB.png/revision/latest/scale-to-width-down/270?cb=20170718053533&path-prefix=ru" alt=""></div>
-              <div class="data">
-                <div class="name relic">Орел</div>
-                <div class="price">
-                  <div class="sell">
-                    <div class="angle-up"></div>
-                    Sell: 20.18 
-                    <div>
-                      <div class="angle-up"></div>
-                      Demands: 123
-                    </div>
-                  </div>
-                  <div class="buy">
-                    <div class="angle-down"></div>
-                    Buy: 19.78 
-                    <div>
-                      <div class="angle-up"></div>
-                      Offers: 123
-                    </div>
-                  </div>
-                  <div class="margin">
-                    <div class="angle-down"></div>
-                    Margin: 1.02
-                    <div>
-                      <div class="angle-up"></div>
-                      Diff: 27
-                    </div>
-                  </div>
-                </div>
-                <div class="buttons">
-                  <div class="remove"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <table class="u-full-width">
+            <thead>
+              <th></th>
+              <th>name</th>
+              <th>bid/offers</th>
+              <th>ask/offers</th>
+              <th>margin</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="img">
+                  <img src="https://raw.githubusercontent.com/glmn/CrossoutItems/master/128x128/497.png" class="rare" alt="">
+                </td>
+                <td>
+                  <div class="name rare">Cotton x1000</div>
+                </td>
+                <td>
+                  <div><div class="angle-up"></div>395.02<sup>15</sup></div>
+                </td>
+                <td>
+                  <div><div class="angle-down"></div>395.02<sup>125</sup></div>
+                </td>
+                <td>44.34</td>
+              </tr>
+              <tr>
+                <td class="img">
+                  <img src="https://raw.githubusercontent.com/glmn/CrossoutItems/master/128x128/497.png" class="legendary" alt="">
+                </td>
+                <td>
+                  <div class="name legendary">Cotton x1000</div>
+                </td>
+                <td>
+                  <div><div class="angle-up"></div>395.02<sup>15</sup></div>
+                </td>
+                <td>
+                  <div><div class="angle-up"></div>395.02<sup>125</sup></div>
+                </td>
+                <td>44.34</td>
+              </tr>
+            </tbody>
+          </table>
         </aside>
 
         <section class="content">
