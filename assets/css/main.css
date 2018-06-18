@@ -63,10 +63,10 @@
         content: "";
         text-align: right;
         position: absolute;
-        margin-top: -39px;
-        margin-left: 68px;
+        margin-top: -35px;
+        margin-left: 60px;
         width: 20px;
-        height: 59px;
+        height: 50px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0), #2c2f33 50%); }
     .sidebar table td {
       color: white;
@@ -81,20 +81,20 @@
           content: "";
           text-align: right;
           position: absolute;
-          margin-top: -39px;
-          margin-left: 68px;
+          margin-top: -35px;
+          margin-left: 60px;
           width: 20px;
-          height: 59px;
+          height: 50px;
           background: linear-gradient(to right, rgba(255, 255, 255, 0), #141517 50%); }
       .sidebar table td sup {
         font-weight: 300; }
       .sidebar table td.img {
         text-align: center;
-        padding: 6px; }
+        padding: 3px; }
       .sidebar table td img {
         vertical-align: middle;
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
         border: 1px solid black;
         margin-left: auto;
         margin-right: auto; }
