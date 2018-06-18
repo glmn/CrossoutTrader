@@ -105,8 +105,8 @@
           border-color: #7288da;
           background-color: rgba(0, 102, 204, 0.1); }
         .sidebar table td img.epic {
-          border-top: 4px solid #6a0082;
-          border-color: #6a0082;
+          border-top: 4px solid #bb61d0;
+          border-color: #bb61d0;
           background-color: rgba(185, 0, 255, 0.1); }
         .sidebar table td img.legendary {
           border-top: 4px solid #faa61a;
@@ -129,7 +129,7 @@ div.name.common {
 div.name.rare {
   color: #7288da; }
 div.name.epic {
-  color: #6a0082; }
+  color: #bb61d0; }
 div.name.legendary {
   color: #faa61a; }
 div.name.relic {
