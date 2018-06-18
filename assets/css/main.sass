@@ -16,7 +16,8 @@ $relic-color: #d2691e
 $relic-background-color: rgba(255, 103, 1, 0.1)
 
 .app
-  font-size: 12px
+  cursor: url(https://vignette.wikia.nocookie.net/crossout/images/c/c6/Cursor_ordinary.png/revision/latest?cb=20170627102414&path-prefix=ru), auto
+  font-size: 13px
   font-family: "Poppins", sans-serif
   display: flex
   flex-direction: column
@@ -60,6 +61,7 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
   display: flex
   flex-direction: column
   width: 400px
+  min-width: 400px
   background-color: $darken-color
   padding: 1rem
 
@@ -156,12 +158,97 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
           border-color: $relic-color
           background-color: $relic-background-color
 
-.content
+section
+  &.content
+    display: flex
+    flex-direction: row
+    font-family: "Poppins", sans-serif
+    padding: 1rem
+    width: 100%
+    min-width: 820 !important
+    height: 40px
+    background-color: lighten($lighten-color, 5%)
+
+  .label
+    color: $primary-text-color
+    font-weight: 600
+    padding-bottom: 2px
+
+  .search
+    float: left
+    padding-right: 20px
+
+    input[type="text"]
+      margin: 0
+      height: 40px
+      background-color: $darken-color
+      border-color: $lighten-color
+      color: white
+      border-radius: 0
+
+  .rarities
+    width: 215px !important
+    padding-right: 0 !important
+
+  .categories, .rarities
+    width: 390px
+    float: left
+    padding-right: 20px
+
+    .category
+      position: relative
+      display: inline-block
+      border: 1px solid $primary-text-color
+      padding: 4px
+      width: 40px
+      height: 40px
+      vertical-align: middle
+      box-sizing: border-box
+
+      &:hover
+        cursor: pointer
+        border-color: $darken-color
+
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        max-width: 30px
+        max-height: 30px
+
+      .rarity
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        height: 25px
+        width: 25px
+
+        &.common
+          background-color: $common-color
+
+        &.rare
+          background-color: $rare-color
+
+        &.epic
+          background-color: $epic-color
+
+        &.legendary
+          background-color: $legendary-color
+
+        &.relic
+          background-color: $relic-color
+
+.full-width-container
   width: 100%
-  padding: 1rem
-  display: flex
-  flex-direction: column
-  flex: 1
+  max-width: 100%
+  clear: both
+  margin: 0 auto
 
 // utils
 div
