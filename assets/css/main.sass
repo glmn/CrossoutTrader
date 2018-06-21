@@ -129,120 +129,116 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
         vertical-align: middle
         width: 40px
         height: 40px
-        border: 1px solid black
         margin-left: auto
         margin-right: auto
-
-        &.common
-          border-top: 4px solid $common-color
-          border-color: $common-color
-          background-color: $common-background-color
-
-        &.rare
-          border-top: 4px solid $rare-color
-          border-color: $rare-color
-          background-color: $rare-background-color
-
-        &.epic
-          border-top: 4px solid $epic-color
-          border-color: $epic-color
-          background-color: $epic-background-color
-
-        &.legendary
-          border-top: 4px solid $legendary-color
-          border-color: $legendary-color
-          background-color: $legendary-background-color
-
-        &.relic
-          border-top: 4px solid $relic-color
-          border-color: $relic-color
-          background-color: $relic-background-color
 
 section
   &.content
     display: flex
-    flex-direction: row
+    flex-direction: column
     font-family: "Poppins", sans-serif
-    padding: 1rem
     width: 100%
     min-width: 820 !important
+
+  .filters
+    padding: 1rem
+    display: flex
+    flex-direction: row
     height: 40px
     background-color: lighten($lighten-color, 5%)
 
-  .label
-    color: $primary-text-color
-    font-weight: 600
-    padding-bottom: 2px
+    .label
+      color: $primary-text-color
+      font-weight: 600
+      padding-bottom: 2px
 
-  .search
-    float: left
-    padding-right: 20px
+    .search
+      float: left
+      padding-right: 20px
 
-    input[type="text"]
-      margin: 0
-      height: 40px
-      background-color: $darken-color
-      border-color: $lighten-color
-      color: white
-      border-radius: 0
+      input[type="text"]
+        margin: 0
+        height: 40px
+        background-color: $darken-color
+        border-color: $lighten-color
+        color: white
+        border-radius: 0
 
-  .rarities
-    width: 215px !important
-    padding-right: 0 !important
+    .rarities
+      width: 215px !important
+      padding-right: 0 !important
 
-  .categories, .rarities
-    width: 390px
-    float: left
-    padding-right: 20px
+    .categories, .rarities
+      width: 390px
+      float: left
+      padding-right: 20px
 
-    .category
-      position: relative
-      display: inline-block
-      border: 1px solid $primary-text-color
-      padding: 4px
-      width: 40px
-      height: 40px
-      vertical-align: middle
-      box-sizing: border-box
+      .category
+        position: relative
+        display: inline-block
+        border: 1px solid $primary-text-color
+        padding: 4px
+        width: 40px
+        height: 40px
+        vertical-align: middle
+        box-sizing: border-box
 
-      &:hover
-        cursor: pointer
-        border-color: $darken-color
+        &:hover
+          cursor: pointer
+          border-color: $darken-color
 
-      img
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        margin: auto
-        max-width: 30px
-        max-height: 30px
+        img
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          margin: auto
+          max-width: 30px
+          max-height: 30px
 
-      .rarity
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        margin: auto
-        height: 25px
-        width: 25px
+        .rarity
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          margin: auto
+          height: 25px
+          width: 25px
 
-        &.common
-          background-color: $common-color
+          &.common
+            background-color: $common-color
 
-        &.rare
-          background-color: $rare-color
+          &.rare
+            background-color: $rare-color
 
-        &.epic
-          background-color: $epic-color
+          &.epic
+            background-color: $epic-color
 
-        &.legendary
-          background-color: $legendary-color
+          &.legendary
+            background-color: $legendary-color
 
-        &.relic
-          background-color: $relic-color
+          &.relic
+            background-color: $relic-color
+
+  .items
+    color: white
+    display: flex
+    flex-direction: row
+    padding: 1rem
+
+    table
+      th, td
+        border-bottom: none
+        padding: 0
+        font-weight: 600
+
+      thead
+        color: $primary-text-color
+        font-weight: 400
+
+  .item
 
 .full-width-container
   width: 100%
@@ -300,3 +296,29 @@ div
     display: inline-block
     width: 16px
     height: 16px
+
+img
+  &.common
+    border: 1px solid $common-color
+    border-top: 4px solid $common-color
+    background-color: $common-background-color
+
+  &.rare
+    border: 1px solid $rare-color
+    border-top: 4px solid $rare-color
+    background-color: $rare-background-color
+
+  &.epic
+    border: 1px solid $epic-color
+    border-top: 4px solid $epic-color
+    background-color: $epic-background-color
+
+  &.legendary
+    border: 1px solid $legendary-color
+    border-top: 4px solid $legendary-color
+    background-color: $legendary-background-color
+
+  &.relic
+    border: 1px solid $relic-color
+    border-top: 4px solid $relic-color
+    background-color: $relic-background-color

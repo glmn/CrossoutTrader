@@ -95,100 +95,94 @@
         vertical-align: middle;
         width: 40px;
         height: 40px;
-        border: 1px solid black;
         margin-left: auto;
         margin-right: auto; }
-        .sidebar table td img.common {
-          border-top: 4px solid #696969;
-          border-color: #696969;
-          background-color: rgba(170, 170, 170, 0.1); }
-        .sidebar table td img.rare {
-          border-top: 4px solid #7288da;
-          border-color: #7288da;
-          background-color: rgba(0, 102, 204, 0.1); }
-        .sidebar table td img.epic {
-          border-top: 4px solid #bb61d0;
-          border-color: #bb61d0;
-          background-color: rgba(185, 0, 255, 0.1); }
-        .sidebar table td img.legendary {
-          border-top: 4px solid #faa61a;
-          border-color: #faa61a;
-          background-color: rgba(254, 160, 64, 0.1); }
-        .sidebar table td img.relic {
-          border-top: 4px solid #d2691e;
-          border-color: #d2691e;
-          background-color: rgba(255, 103, 1, 0.1); }
 
 section.content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
-  padding: 1rem;
   width: 100%;
-  min-width: 820 !important;
+  min-width: 820 !important; }
+section .filters {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
   height: 40px;
   background-color: #383b40; }
-section .label {
-  color: #72767d;
-  font-weight: 600;
-  padding-bottom: 2px; }
-section .search {
-  float: left;
-  padding-right: 20px; }
-  section .search input[type="text"] {
-    margin: 0;
-    height: 40px;
-    background-color: #141517;
-    border-color: #2c2f33;
-    color: white;
-    border-radius: 0; }
-section .rarities {
-  width: 215px !important;
-  padding-right: 0 !important; }
-section .categories, section .rarities {
-  width: 390px;
-  float: left;
-  padding-right: 20px; }
-  section .categories .category, section .rarities .category {
-    position: relative;
-    display: inline-block;
-    border: 1px solid #72767d;
-    padding: 4px;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    box-sizing: border-box; }
-    section .categories .category:hover, section .rarities .category:hover {
-      cursor: pointer;
-      border-color: #141517; }
-    section .categories .category img, section .rarities .category img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      max-width: 30px;
-      max-height: 30px; }
-    section .categories .category .rarity, section .rarities .category .rarity {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      height: 25px;
-      width: 25px; }
-      section .categories .category .rarity.common, section .rarities .category .rarity.common {
-        background-color: #696969; }
-      section .categories .category .rarity.rare, section .rarities .category .rarity.rare {
-        background-color: #7288da; }
-      section .categories .category .rarity.epic, section .rarities .category .rarity.epic {
-        background-color: #bb61d0; }
-      section .categories .category .rarity.legendary, section .rarities .category .rarity.legendary {
-        background-color: #faa61a; }
-      section .categories .category .rarity.relic, section .rarities .category .rarity.relic {
-        background-color: #d2691e; }
+  section .filters .label {
+    color: #72767d;
+    font-weight: 600;
+    padding-bottom: 2px; }
+  section .filters .search {
+    float: left;
+    padding-right: 20px; }
+    section .filters .search input[type="text"] {
+      margin: 0;
+      height: 40px;
+      background-color: #141517;
+      border-color: #2c2f33;
+      color: white;
+      border-radius: 0; }
+  section .filters .rarities {
+    width: 215px !important;
+    padding-right: 0 !important; }
+  section .filters .categories, section .filters .rarities {
+    width: 390px;
+    float: left;
+    padding-right: 20px; }
+    section .filters .categories .category, section .filters .rarities .category {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #72767d;
+      padding: 4px;
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      box-sizing: border-box; }
+      section .filters .categories .category:hover, section .filters .rarities .category:hover {
+        cursor: pointer;
+        border-color: #141517; }
+      section .filters .categories .category img, section .filters .rarities .category img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 30px;
+        max-height: 30px; }
+      section .filters .categories .category .rarity, section .filters .rarities .category .rarity {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 25px;
+        width: 25px; }
+        section .filters .categories .category .rarity.common, section .filters .rarities .category .rarity.common {
+          background-color: #696969; }
+        section .filters .categories .category .rarity.rare, section .filters .rarities .category .rarity.rare {
+          background-color: #7288da; }
+        section .filters .categories .category .rarity.epic, section .filters .rarities .category .rarity.epic {
+          background-color: #bb61d0; }
+        section .filters .categories .category .rarity.legendary, section .filters .rarities .category .rarity.legendary {
+          background-color: #faa61a; }
+        section .filters .categories .category .rarity.relic, section .filters .rarities .category .rarity.relic {
+          background-color: #d2691e; }
+section .items {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem; }
+  section .items table th, section .items table td {
+    border-bottom: none;
+    padding: 0;
+    font-weight: 600; }
+  section .items table thead {
+    color: #72767d;
+    font-weight: 400; }
 
 .full-width-container {
   width: 100%;
@@ -235,5 +229,26 @@ div.diff {
   display: inline-block;
   width: 16px;
   height: 16px; }
+
+img.common {
+  border: 1px solid #696969;
+  border-top: 4px solid #696969;
+  background-color: rgba(170, 170, 170, 0.1); }
+img.rare {
+  border: 1px solid #7288da;
+  border-top: 4px solid #7288da;
+  background-color: rgba(0, 102, 204, 0.1); }
+img.epic {
+  border: 1px solid #bb61d0;
+  border-top: 4px solid #bb61d0;
+  background-color: rgba(185, 0, 255, 0.1); }
+img.legendary {
+  border: 1px solid #faa61a;
+  border-top: 4px solid #faa61a;
+  background-color: rgba(254, 160, 64, 0.1); }
+img.relic {
+  border: 1px solid #d2691e;
+  border-top: 4px solid #d2691e;
+  background-color: rgba(255, 103, 1, 0.1); }
 
 /*# sourceMappingURL=main.css.map */
