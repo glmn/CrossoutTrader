@@ -28,7 +28,7 @@ request('https://crossoutdb.com/api/v1/items', function (error, response, body) 
 })
 
 app.on('ready', function(){
-  mainWindow = new BrowserWindow({title: 'Login', minWidth: 1280, minHeight: 720, frame: false});
+  mainWindow = new BrowserWindow({title: 'Login', minWidth: 1260, minHeight: 720, frame: false});
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
