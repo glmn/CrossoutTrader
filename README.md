@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/status-work%20in%20progress-yellow.svg)
 # CrossoutTrader
 Get latest data from crossout market to stay in touch
 
