@@ -6,7 +6,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #2c2f33; }
+  background-color: #141517; }
 
 .app-page {
   display: flex;
@@ -177,7 +177,9 @@ section .items {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  max-width: 820px; }
+  max-width: 820px;
+  height: 100%;
+  background-color: #2c2f33; }
   section .items table th, section .items table td {
     border-bottom: none;
     padding: 0;
@@ -185,19 +187,21 @@ section .items {
   section .items table thead {
     color: #72767d;
     font-weight: 400; }
-  section .items table tbody tr:nth-child(even) {
-    background: #141517; }
-  section .items table tbody td.img {
-    text-align: center;
-    padding: 3px;
-    padding-right: 1rem;
-    width: 60px; }
-  section .items table tbody td img {
-    vertical-align: middle;
-    width: 60px;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto; }
+  section .items table tbody {
+    border: 1px solid #72767d; }
+    section .items table tbody tr:nth-child(odd) {
+      background-color: #141517; }
+    section .items table tbody td.img {
+      text-align: center;
+      padding: 1rem;
+      padding-right: 1rem;
+      width: 40px; }
+    section .items table tbody td img {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto; }
 
 .full-width-container {
   width: 100%;

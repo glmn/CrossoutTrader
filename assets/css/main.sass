@@ -23,7 +23,7 @@ $relic-background-color: rgba(255, 103, 1, 0.1)
   flex-direction: column
   width: 100vw
   height: 100vh
-  background-color: $lighten-color
+  background-color: $darken-color
 
 .app-page
   display: flex
@@ -229,6 +229,8 @@ section
     flex-direction: row
     padding: 1rem
     max-width: 820px
+    height: 100%
+    background-color: $lighten-color
 
     table
       th, td
@@ -241,25 +243,25 @@ section
         font-weight: 400
 
       tbody
+        border: 1px solid $primary-text-color
+
         tr
-          &:nth-child(even)
-            background: $darken-color
+          &:nth-child(odd)
+            background-color: $darken-color
 
         td
           &.img
             text-align: center
-            padding: 3px
+            padding: 1rem
             padding-right: 1rem
-            width: 60px
+            width: 40px
 
           img
             vertical-align: middle
-            width: 60px
-            height: 60px
+            width: 40px
+            height: 40px
             margin-left: auto
             margin-right: auto
-
-  .item
 
 .full-width-container
   width: 100%
