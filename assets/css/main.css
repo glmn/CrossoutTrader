@@ -1,6 +1,6 @@
 .app {
   cursor: url(https://vignette.wikia.nocookie.net/crossout/images/c/c6/Cursor_ordinary.png/revision/latest?cb=20170627102414&path-prefix=ru), auto;
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,8 @@ section .filters {
   display: flex;
   flex-direction: row;
   height: 40px;
-  background-color: #383b40; }
+  background-color: #383b40;
+  max-width: 820px; }
   section .filters .label {
     color: #72767d;
     font-weight: 600;
@@ -175,7 +176,8 @@ section .items {
   color: white;
   display: flex;
   flex-direction: row;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 820px; }
   section .items table th, section .items table td {
     border-bottom: none;
     padding: 0;
