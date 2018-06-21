@@ -183,6 +183,19 @@ section .items {
   section .items table thead {
     color: #72767d;
     font-weight: 400; }
+  section .items table tbody tr:nth-child(even) {
+    background: #141517; }
+  section .items table tbody td.img {
+    text-align: center;
+    padding: 3px;
+    padding-right: 1rem;
+    width: 60px; }
+  section .items table tbody td img {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .full-width-container {
   width: 100%;
