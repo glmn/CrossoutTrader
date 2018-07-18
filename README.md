@@ -1,4 +1,5 @@
-![](https://img.shields.io/badge/status-work%20in%20progress-yellow.svg)
+![](https://img.shields.io/badge/status-abandoned-red.svg)
+```Temporarily abandoned due to low refresh rate in CrossoutDb API```
 # CrossoutTrader
 Get latest data from crossout market to stay in touch
 
