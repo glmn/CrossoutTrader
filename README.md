@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/status-abandoned-red.svg)
 
-```Temporarily abandoned due to low refresh rate in CrossoutDb API (~5 minutes per data refresh is tooooooooooo slow )``` :disappointed_relieved: 
+```Temporarily abandoned due to low refresh rate in CrossoutDb API (~5 minutes per data refresh is toooo slow )``` :disappointed_relieved: 
 # CrossoutTrader
 Get latest data from crossout market to stay in touch
 
